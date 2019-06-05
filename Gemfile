@@ -1,16 +1,21 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem 'sinatra'
-gem 'thin'
-gem 'require_all'
+	gem 'sinatra'
+  gem 'activerecord'
+  gem 'sinatra-activerecord'
+  gem 'rake'
+  gem 'thin'
+  gem 'require_all'
 
 
 group :development do
 	gem 'shotgun'
 	gem 'pry'
+	gem 'tux'
+  gem 'sqlite3', '1.4.1'
 end
-    
+
 group :test do
   gem 'rspec'
   gem 'capybara'
